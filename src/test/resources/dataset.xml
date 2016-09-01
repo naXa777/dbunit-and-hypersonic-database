@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+<Person firstname="John" lastname="Smith" gender="M" age="35"/>
+<Person firstname="Samantha" lastname="Johnson" gender="F" age="27"/>
+<Person firstname="Thomas" lastname="Dempsey" gender="M" age="63"/>
+<Person firstname="Jane" lastname="Peters" gender="F" age="41"/>
+</dataset>

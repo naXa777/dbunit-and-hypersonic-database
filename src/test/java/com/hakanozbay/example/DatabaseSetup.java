@@ -34,7 +34,7 @@ public class DatabaseSetup {
 		DatabaseOperation.CLEAN_INSERT.execute(databaseTester.getConnection(), getDataSet());
 	}
 
-	public static void databaseConnectionCreation() throws Exception
+	private static void databaseConnectionCreation() throws Exception
 	{
 		databaseTester = new JdbcDatabaseTester
 				("org.hsqldb.jdbcDriver",

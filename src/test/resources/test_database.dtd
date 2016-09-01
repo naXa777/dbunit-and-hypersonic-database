@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT dataset (
+Person*)>
+ 
+ 
+<!ELEMENT Person EMPTY>
+<!ATTLIST Person
+    firstname CDATA #REQUIRED
+    lastname CDATA #REQUIRED
+    gender CDATA #REQUIRED
+    age CDATA #REQUIRED
+> 
