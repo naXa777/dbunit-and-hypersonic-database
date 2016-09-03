@@ -59,14 +59,12 @@ public class DatabaseSetup {
 
 	private static void getDTD() throws FileNotFoundException, IOException, SQLException, ClassNotFoundException, DatabaseUnitException
 	{
-		// database connection
 		Connection jdbcConnection = DriverManager.getConnection(
 				"server",
 				"username", 
 				"password");
 		IDatabaseConnection connection = new DatabaseConnection(jdbcConnection);
 
-		// write DTD file
 		FlatDtdDataSet.write(connection.createDataSet(), new FileOutputStream("src/test/resources/test_database.dtd"));
 	}
 
