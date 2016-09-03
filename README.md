@@ -50,7 +50,7 @@ Similarly as before you will need to provide the ```server```,```username``` and
 
 ### Loading
 
-Loading the extracted data into the database happens automatically in the ```DatabaseSetup``` class by the ```databaseSetup()``` and ```getDataSet()``` methods. However, *the tables to insert the data to need to be created in the hypersonic database manually beforehand in this codebase*. As with the example you will need to write ```CREATE MEMORY TABLE PUBLIC.<TABLE_NAME>(COLUMNS)``` statements under the ```SET SCHEMA PUBLIC``` declaration of the hypersonic database, which is the file located at ```src/test/resources/test_database.script```
+Loading the extracted data into the database happens automatically in the ```DatabaseSetup``` class by the ```databaseSetup()``` and ```getDataSet()``` methods. However, **the tables to insert the data to need to be created in the hypersonic database manually beforehand in this codebase**. As with the example you will need to write ```CREATE MEMORY TABLE PUBLIC.<TABLE_NAME>(COLUMNS)``` statements under the ```SET SCHEMA PUBLIC``` declaration of the hypersonic database, which is the file located at ```src/test/resources/test_database.script```
 
 
 [dbUnit]: http://dbunit.sourceforge.net/
