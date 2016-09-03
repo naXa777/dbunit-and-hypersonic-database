@@ -13,9 +13,13 @@ import org.dbunit.dataset.Column;
 import org.dbunit.dataset.ITable;
 import org.junit.Before;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class DatabaseSetupTest {
 
+	private static final Logger log = LoggerFactory.getLogger(DatabaseSetupTest.class);
+	
 	private IDatabaseConnection connection;
 	
 	@Before
@@ -39,10 +43,10 @@ public class DatabaseSetupTest {
 		
 		assertEquals(table.getRowCount(),4);
 		
-		System.out.println(getRow(0, table));
-		System.out.println(getRow(1, table));
-		System.out.println(getRow(2, table));
-		System.out.println(getRow(3, table));
+		log.info(getRow(0, table).toString());
+		log.info(getRow(1, table).toString());
+		log.info(getRow(2, table).toString());
+		log.info(getRow(3, table).toString());
 		
 	}
 
