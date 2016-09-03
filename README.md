@@ -81,7 +81,7 @@ In the `DatabaseSetup` class there is the method `getData()` that will connect t
 	}
 ```
 In order to utilize this you will need to provide the `server`,`username` and `password` values to connect to the database of your choice.  
-You will also need to update the `table_name` value to specifcy the table you want to extract data from. If you want to extract from multiple tables you will need to repeat the command ```java partialDataSet.addTable("table_name");``` for every table you want to extract data from. Note - this command will extract all the data in a table.
+You will also need to update the `table_name` value to specifcy the table you want to extract data from. If you want to extract from multiple tables you will need to repeat the command `partialDataSet.addTable("table_name");` for every table you want to extract data from. Note - this command will extract all the data in a table.
 The data will then be written to a file called `dataset.xml` in the `src/test/resources` folder.
 
 The database table descriptor (DTD) for the entire database is extracted via the `getDTD()` method:
