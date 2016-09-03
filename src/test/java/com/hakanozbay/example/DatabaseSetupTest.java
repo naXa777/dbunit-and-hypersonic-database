@@ -43,10 +43,10 @@ public class DatabaseSetupTest {
 		
 		assertEquals(table.getRowCount(),4);
 		
-		log.info(getRow(0, table).toString());
-		log.info(getRow(1, table).toString());
-		log.info(getRow(2, table).toString());
-		log.info(getRow(3, table).toString());
+		log.info("Data in row {}: {}",1,getRow(0, table).toString());
+		log.info("Data in row {}: {}",2,getRow(1, table).toString());
+		log.info("Data in row {}: {}",3,getRow(2, table).toString());
+		log.info("Data in row {}: {}",4,getRow(3, table).toString());
 		
 	}
 
