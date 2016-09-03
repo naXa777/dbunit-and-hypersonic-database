@@ -81,7 +81,6 @@ public class DatabaseSetup {
 
 		QueryDataSet partialDataSet = new QueryDataSet(connection);
 		partialDataSet.addTable("table_name");
-		partialDataSet.addTable("table_name");
 		FlatXmlDataSet.write(partialDataSet, new FileOutputStream("src/test/resources/dataset.xml"));
 	}
 
