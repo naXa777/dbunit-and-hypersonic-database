@@ -30,10 +30,10 @@ public class DatabaseSetup {
 		if (databaseTester == null)
 			databaseConnectionCreation();
 		
+		databaseTester.setDataSet(getDataSet());
 		databaseTester.setTearDownOperation(DatabaseOperation.DELETE_ALL);
 		databaseTester.onTearDown();
-		
-		databaseTester.setDataSet(getDataSet());
+
 		databaseTester.setSetUpOperation(DatabaseOperation.CLEAN_INSERT);
 		databaseTester.onSetup();
 	}
