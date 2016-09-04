@@ -41,7 +41,7 @@ public class DatabaseSetupTest {
 		
 		ITable table = connection.createDataSet().getTable("Person");
 		
-		assertEquals(table.getRowCount(),4);
+		assertEquals(4,table.getRowCount());
 		
 		log.info("Data in row {}: {}",1,getRow(0, table).toString());
 		log.info("Data in row {}: {}",2,getRow(1, table).toString());

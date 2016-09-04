@@ -30,8 +30,12 @@ public class DatabaseSetup {
 		if (databaseTester == null)
 			databaseConnectionCreation();
 		
-		databaseTester.getConnection().getConnection().prepareStatement("TRUNCATE SCHEMA PUBLIC AND COMMIT").execute();
-		DatabaseOperation.CLEAN_INSERT.execute(databaseTester.getConnection(), getDataSet());
+		databaseTester.setTearDownOperation(DatabaseOperation.DELETE_ALL);
+		databaseTester.onTearDown();
+		
+		databaseTester.setDataSet(getDataSet());
+		databaseTester.setSetUpOperation(DatabaseOperation.CLEAN_INSERT);
+		databaseTester.onSetup();
 	}
 
 	private static void databaseConnectionCreation() throws Exception
