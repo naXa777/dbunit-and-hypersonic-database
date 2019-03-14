@@ -1,6 +1,6 @@
 # dbunit and hypersonic database demonstration
 
-This is an example demonstration of using the [dbUnit] [] framework in conjunction with a [hypersonic][] (HSQL) database, for the purposes of integration and workflow testing by utilizing a fake internal database, loaded with a schema and data that you can generate by extracting from real databases.
+This is an example demonstration of using the [dbUnit][] framework in conjunction with a [hypersonic][] (HSQL) database, for the purposes of integration and workflow testing by utilizing a fake internal database, loaded with a schema and data that you can generate by extracting from real databases.
 
 ## Overview
 dbUnit is used for data/schema extraction from a databse, loading data into a database and querying the database. 
@@ -125,4 +125,3 @@ Loading the extracted data into the database happens automatically in the `Datab
 
 [dbUnit]: http://dbunit.sourceforge.net/
 [hypersonic]: http://hsqldb.org/
-
